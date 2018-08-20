@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Weather at Different Latitudes - Landing Page</title>
+  <title>Weather at Different Latitudes - Cloudiness</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -22,7 +22,7 @@
                             <ul class="dropdown-menu">
                                 <li><a href="./visualization-image-1.html">Latitude vs. Max Temperature</a></li>
                                 <li><a href="./visualization-image-2.html">Latitude vs. Humidity</a></li>
-                                <li><a href="./visualization-image-3.html">Latitude vs. Cloudiness</a></li>
+                                <li><a href="#">Latitude vs. Cloudiness</a></li>
                                 <li><a href="./visualization-image-4.html">Latitude vs. Wind Speed</a></li>
                             </ul>
                         </li>
@@ -37,12 +37,12 @@
         <div class="overheersend">
         <div class="row">
             <div class="col-sm-12 col-md-8">
-                <div class="main_l">
-                    <h1 class="myHead">Summary: Latitude vs. X</h1>
+                <div class="main_viz">
+                    <h1 class="myHead">Cloudiness</h1>
                     <hr/>
-                    <img src="./output_data/Lat_Temp.png" alt="Latitude vs. Max Temperature" height="280" width="280" align="left" style="border:2px solid black">
-                    <p class="ParaText">The purpose of this project was to analyze how weather changes as you get further away from the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.</p>
-                    <p class="ParaText">After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
+                    <img src="./output_data/Lat_Clouds.png" alt="Latitude vs. Cloudiness" height="400" width="600" style="border:2px solid black" class="align_viz">
+                    <br>
+                    <p class="ParaText_Viz">It seems that varying levels of cloudiness occur at all latitudes, and that the measurements for cloudiness are imprecise, given that nearly all fall along the same parameters (i.e. 75%, 20%, 40%). It is worth nothing that between 0 and 20 degrees north latitude very few cities have 0% cloudcover.</p>
                 </div>
             </div>
     
